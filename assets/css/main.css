@@ -69,14 +69,18 @@ body {
 .icon-star {
   font-size: 4em;
   -webkit-animation: shiny 1s steps(2) infinite;
+  -moz-animation: shiny 1s steps(2) infinite;
+  animation: shiny 1s steps(2) infinite;
 }
-/* line 15, ../_scss/main.scss */
+/* line 17, ../_scss/main.scss */
 .icon-star:last-child {
   color: magenta;
   -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
-/* line 21, ../_scss/main.scss */
+/* line 25, ../_scss/main.scss */
 .crazy-test {
   background: lightgreen;
   font-size: 10em;
@@ -84,7 +88,7 @@ body {
   font-weight: bold;
 }
 
-/* line 29, ../_scss/main.scss */
+/* line 33, ../_scss/main.scss */
 .icon-star,
 .crazy-test {
   vertical-align: middle;
@@ -92,12 +96,36 @@ body {
 }
 
 @-webkit-keyframes shiny {
-  /* line 35, ../_scss/main.scss */
+  /* line 38, ../_scss/main.scss */
+  from {
+    color: #BADA55;
+  }
+
+  /* line 38, ../_scss/main.scss */
+  to {
+    color: magenta;
+  }
+}
+
+@-moz-keyframes shiny {
+  /* line 39, ../_scss/main.scss */
   from {
     color: #BADA55;
   }
 
   /* line 39, ../_scss/main.scss */
+  to {
+    color: magenta;
+  }
+}
+
+@keyframes shiny {
+  /* line 40, ../_scss/main.scss */
+  from {
+    color: #BADA55;
+  }
+
+  /* line 40, ../_scss/main.scss */
   to {
     color: magenta;
   }
