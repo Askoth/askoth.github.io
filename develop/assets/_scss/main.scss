@@ -1,0 +1,42 @@
+@import "font-awesome.scss";
+
+html {
+    background: green;
+}
+
+body {
+    text-align: center;
+}
+
+
+.icon-star {
+    font-size: 4em;
+    -webkit-animation: shiny 1s steps(2) infinite;
+    &:last-child {
+        color: magenta;
+        -webkit-animation-delay: 0.5s;
+    }
+}
+
+.crazy-test {
+    background: lightgreen;
+    font-size: 10em;
+    font-family: "Comic Sans MS", sans-serif;
+    font-weight: bold;
+}
+
+.icon-star,
+.crazy-test {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+@-webkit-keyframes shiny {
+    from {
+        color: #BADA55;
+    }
+
+    to {
+        color: magenta;
+    }
+}
