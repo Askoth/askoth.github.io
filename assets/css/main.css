@@ -30,7 +30,7 @@
 
 /*  Font Awesome styles
     ------------------------------------------------------- */
-/* line 43, ../_scss/font-awesome.scss */
+/* line 43, ../_scss/_font-awesome.scss */
 [class^="icon-"],
 [class*=" icon-"] {
   font-family: FontAwesome;
@@ -50,7 +50,7 @@
   margin-top: 0;
 }
 
-/* line 273, ../_scss/font-awesome.scss */
+/* line 273, ../_scss/_font-awesome.scss */
 .icon-star:before {
   content: "\f005";
 }
