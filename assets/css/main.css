@@ -55,32 +55,34 @@
   content: "\f005";
 }
 
-/* line 3, ../_scss/main.scss */
+/* line 4, ../_scss/main.scss */
 html {
   background: green;
 }
 
-/* line 7, ../_scss/main.scss */
+/* line 8, ../_scss/main.scss */
 body {
   text-align: center;
 }
 
-/* line 12, ../_scss/main.scss */
+/* line 13, ../_scss/main.scss */
 .icon-star {
   font-size: 4em;
   -webkit-animation: shiny 1s steps(2) infinite;
   -moz-animation: shiny 1s steps(2) infinite;
+  -o-animation: shiny 1s steps(2) infinite;
   animation: shiny 1s steps(2) infinite;
 }
-/* line 17, ../_scss/main.scss */
+/* line 18, ../_scss/main.scss */
 .icon-star:last-child {
   color: magenta;
   -webkit-animation-delay: 0.5s;
   -moz-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
 
-/* line 25, ../_scss/main.scss */
+/* line 26, ../_scss/main.scss */
 .crazy-test {
   background: lightgreen;
   font-size: 10em;
@@ -88,23 +90,11 @@ body {
   font-weight: bold;
 }
 
-/* line 33, ../_scss/main.scss */
+/* line 34, ../_scss/main.scss */
 .icon-star,
 .crazy-test {
   vertical-align: middle;
   display: inline-block;
-}
-
-@-webkit-keyframes shiny {
-  /* line 38, ../_scss/main.scss */
-  from {
-    color: #BADA55;
-  }
-
-  /* line 38, ../_scss/main.scss */
-  to {
-    color: magenta;
-  }
 }
 
 @-moz-keyframes shiny {
@@ -119,13 +109,37 @@ body {
   }
 }
 
-@keyframes shiny {
-  /* line 40, ../_scss/main.scss */
+@-webkit-keyframes shiny {
+  /* line 39, ../_scss/main.scss */
   from {
     color: #BADA55;
   }
 
-  /* line 40, ../_scss/main.scss */
+  /* line 39, ../_scss/main.scss */
+  to {
+    color: magenta;
+  }
+}
+
+@-o-keyframes shiny {
+  /* line 39, ../_scss/main.scss */
+  from {
+    color: #BADA55;
+  }
+
+  /* line 39, ../_scss/main.scss */
+  to {
+    color: magenta;
+  }
+}
+
+@keyframes shiny {
+  /* line 39, ../_scss/main.scss */
+  from {
+    color: #BADA55;
+  }
+
+  /* line 39, ../_scss/main.scss */
   to {
     color: magenta;
   }
