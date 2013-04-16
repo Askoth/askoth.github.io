@@ -12,13 +12,9 @@ body {
 
 .icon-star {
     font-size: 4em;
-    // -webkit-animation: shiny 1s steps(2) infinite;
-    // -moz-animation: shiny 1s steps(2) infinite;
     @include animation(shiny 1s steps(2) infinite);
     &:last-child {
         color: magenta;
-        // -webkit-animation-delay: 0.5s;
-        // -moz-animation-delay: 0.5s;
         @include animation-delay(0.5s);
     }
 }
@@ -37,6 +33,3 @@ body {
 }
 
 @include keyframes (shiny) {from { color: #BADA55;} to { color: magenta;}}
-// @-webkit-keyframes shiny {from { color: #BADA55;} to { color: magenta;}}
-// @-moz-keyframes shiny {from { color: #BADA55;} to { color: magenta;}}
-// @keyframes shiny {from { color: #BADA55;} to { color: magenta;}}
